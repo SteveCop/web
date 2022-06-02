@@ -1,7 +1,8 @@
-import { RegisterForm } from "../../components/Register";
+import { RegisterForm } from "../../components/Register"
 import { Navbar } from '../../components/Navbar'
 import styles from '../../styles/Home.module.css'
 import Link from "next/link";
+import Footer from "../../components/Footers/Footer.js"
 
 export default function Register() {
   return (
@@ -15,11 +16,7 @@ export default function Register() {
         </div>
       </main>
       
-      <footer className={styles.footer}>
-          &copy;&nbsp;<span>
-             {new Date().getFullYear()}
-          </span>
-      </footer>
-    </>
+      <Footer />
+      </>
   );
 }

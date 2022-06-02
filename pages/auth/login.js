@@ -2,6 +2,7 @@ import { LoginForm } from '../../components/Login'
 import { Navbar } from '../../components/Navbar'
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link'
+import Footer from "../../components/Footers/Footer.js";
 
 
 export default function Login() {
@@ -15,12 +16,7 @@ export default function Login() {
         </div>
       </main>
       
-      <footer className={styles.footer}>
-          &copy;&nbsp;<span>
-             {new Date().getFullYear()}
-          </span>
-      </footer>
-    
+      <Footer />
     </>
 
   );

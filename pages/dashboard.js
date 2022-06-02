@@ -4,6 +4,7 @@ import { whoAmI } from '../lib/auth'
 import styles from '../styles/Home.module.css'
 import { removeToken } from '../lib/token'
 import { Navbar } from '../components/Navbar'
+import Footer from "../components/Footers/Footer.js"
 
 export default function Dashboard() {
   const [user, setUser] = useState({});
@@ -65,11 +66,12 @@ export default function Dashboard() {
         </nav>
         <h3>{user.username}&apos;s Profile </h3>
         </div>
+        
       </>
     );
   }
   return <div>Welcome back soldier. Welcome to your empty profile.</div>;
-  
+    
 }
 
 // Fojan side notes :

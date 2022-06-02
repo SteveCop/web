@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/Navbar'
+import Footer from "../components/Footers/Footer.js"
 
 
 export default function Home() {
@@ -49,11 +50,7 @@ export default function Home() {
         
       </main>
       
-      <footer className={styles.footer}>
-          &copy;&nbsp;<span>
-             {new Date().getFullYear()}
-          </span>
-      </footer>
+      <Footer />
     </>
   )
 }

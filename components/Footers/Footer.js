@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-blueGray-200 pt-8 pb-6">
+      <footer className="relative bg-blue-200/70 pt-8 pb-6">
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style={{ transform: "translateZ(0)" }}
@@ -18,7 +18,7 @@ export default function Footer() {
             y="0"
           >
             <polygon
-              className="text-blueGray-200 fill-current"
+              className="text-blue-200/70 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
@@ -140,14 +140,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-blueGray-300" />
+          <hr className="my-6 border-blue-300/70" />
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-blueGray-500 font-semibold py-1">
+              <div className="text-sm text-blue-500/70 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} Blog by{" "}
                 <a
                   href="#"
-                  className="text-blueGray-500 hover:text-blueGray-800"
+                  className="text-blue-500/70 hover:text-blueGray-800"
                 >
                   Creative Tim
                 </a>

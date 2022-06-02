@@ -47,8 +47,8 @@ export function LoginForm() {
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
-        <div class="p-0 w-96 py-3">
-          <div class="p-4 max-w-sm rounded border overflow-hidden shadow-lg px-10 py-8  ">
+        <div className="p-0 w-96 py-3">
+          <div className="p-4 max-w-sm rounded border overflow-hidden shadow-lg px-10 py-8  ">
             <legend className="text-2xl py-5" >Login</legend>
             <div className="mb-3">
               <label htmlFor="usernameInput" className="form-label block mb-2 text-sm font-medium">
@@ -85,7 +85,7 @@ export function LoginForm() {
                 <label className="form-check-label" htmlFor="RememberMeInput">
                   Remember Me
                 </label>
-                <a href="#" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500 px-10 text-left">Lost Password?</a>
+                <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500 px-10 text-left">Lost Password?</a>
               </div>
             </div>
             {errorMessage && (

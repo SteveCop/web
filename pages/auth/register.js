@@ -10,8 +10,8 @@ export default function Register() {
       <main className={styles.main2}>
        
       <RegisterForm />
-        <div class="text-sm font-medium">
-          Registered Before? <a href="/auth/login" class="text-blue-700 hover:underline dark:text-blue-500">Signin Now!</a>
+        <div className="text-sm font-medium">
+          Registered Before? <Link href="/auth/login"><a  className="text-blue-700 hover:underline dark:text-blue-500">Signin Now!</a></Link>
         </div>
       </main>
       

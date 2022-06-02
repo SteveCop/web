@@ -10,8 +10,8 @@ export default function Login() {
       <Navbar />
       <main className={styles.main2}>
       <LoginForm />
-        <div class="text-sm font-medium">
-            Not registered? <a href="/auth/register" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+        <div className="text-sm font-medium">
+            Not registered? <Link href="/auth/register" ><a className="text-blue-700 hover:underline dark:text-blue-500">Create account</a></Link>
         </div>
       </main>
       

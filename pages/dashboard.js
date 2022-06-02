@@ -63,12 +63,13 @@ export default function Dashboard() {
             </button>
           </div>
         </nav>
-        <h3>{user.username}&apos;s Profile</h3>
+        <h3>{user.username}&apos;s Profile </h3>
         </div>
       </>
     );
   }
   return <div>Welcome back soldier. Welcome to your empty profile.</div>;
+  
 }
 
 // Fojan side notes :

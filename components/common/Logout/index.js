@@ -13,8 +13,8 @@ export default function Logout () {
             setHidden('hidden')
         }
     }
-    function redirectToLogin() {
-        Router.push("/auth/login");
+    function redirectToDasboard() {
+        Router.push("/dashboard");
         }   
 
     function handleLogout() {
@@ -33,13 +33,16 @@ export default function Logout () {
                 </div> 
                 <ul class="py-1" aria-labelledby="dropdown">
                 <li>
+                    <a class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" onClick={redirectToDasboard}>Dashboard</a>
+                </li>
+                <li>
                     <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Setting</a>
                 </li>
                 <li>
                     <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Help</a>
                 </li>
                 <li>
-                    <button onClick={handleLogout} ><a className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a></button>
+                    <a className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"  onClick={handleLogout} >Sign out</a>
                 </li>
                 </ul>
             </div>

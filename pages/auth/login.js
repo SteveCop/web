@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Login() {
   return (
-    <div className={styles.container}>
+    <>
       <Navbar />
       <main className={styles.main2}>
       <LoginForm />
@@ -20,7 +20,8 @@ export default function Login() {
              {new Date().getFullYear()}
           </span>
       </footer>
-    </div>
+    
+    </>
 
   );
 }

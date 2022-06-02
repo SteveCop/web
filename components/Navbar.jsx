@@ -15,6 +15,7 @@ export const Navbar = () => {
     {menu: 'Services', link: '/'},
     {menu: 'About us', link: '/'},
     {menu: 'Contact us', link: '/'},
+    {menu: 'Landing', link: '/landing'},
     {menu: cookie ? <Logout /> : 'Login', link: cookie ? '' : '/auth/login'},
   ]
 

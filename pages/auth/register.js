@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Register() {
   return (
-    <div className={styles.container}>
+    <>
       <Navbar />
       <main className={styles.main2}>
        
@@ -20,6 +20,6 @@ export default function Register() {
              {new Date().getFullYear()}
           </span>
       </footer>
-    </div>
+    </>
   );
 }

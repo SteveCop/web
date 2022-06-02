@@ -8,8 +8,7 @@ export default function Home() {
   const now = new Date();
   
   return (
-    
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Blog</title>
         <link rel="icon" href="/favicon.ico" />
@@ -55,6 +54,6 @@ export default function Home() {
              {new Date().getFullYear()}
           </span>
       </footer>
-    </div>
+    </>
   )
 }

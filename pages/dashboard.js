@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Router from 'next/router'
 import { whoAmI } from '../lib/auth'
+import styles from '../styles/Home.module.css'
 import { removeToken } from '../lib/token'
 import { Navbar } from '../components/Navbar'
 
@@ -45,6 +46,7 @@ export default function Dashboard() {
   if (user.hasOwnProperty("username")) {
     return (
       <>
+      <div className={styles.container}>
       <Navbar />
         <nav className="navbar navbar-light" style={{ backgroundColor: "#e3f2fd" }}>
           <div className="container-fluid">
@@ -62,6 +64,7 @@ export default function Dashboard() {
           </div>
         </nav>
         <h3>{user.username}&apos;s Profile</h3>
+        </div>
       </>
     );
   }

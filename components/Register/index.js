@@ -28,7 +28,7 @@ export function RegisterForm() {
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
-        <div class="p-1 w-96 py-3">
+        <div class="p-0 w-96 py-3">
           <div class="p-4 max-w-sm rounded border overflow-hidden shadow-lg px-10 py-8 ">
             <legend className="text-2xl py-5">Register</legend>
             <div className="mb-3">

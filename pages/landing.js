@@ -125,7 +125,7 @@ export default function Home() {
               </div>
 
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-700/75">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-800/75">
                     <img
                       alt="..."
                       src="https://cdn.shopify.com/s/files/1/1789/5809/products/0620-BloomyDays-Thumbnail-01_1600x.jpg?v=1592275040"
@@ -136,11 +136,11 @@ export default function Home() {
                         preserveAspectRatio="none"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 583 95"
-                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                        className="absolute left-0 w-full block h-56 -top-56"
                       >
                         <polygon
                           points="-30,95 583,95 583,65"
-                          className="text-blueGray-700 fill-current"
+                          className="text-blue-800/75 fill-current"
                         ></polygon>
                       </svg>
                       <h4 className="text-xl font-bold text-white">

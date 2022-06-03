@@ -38,28 +38,28 @@ export default function Footer() {
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
                 <button
-                  className="bg-white text-cyan-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-cyan-400 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <FontAwesomeIcon icon="fab fa-twitter" /> */}
                   <FontAwesomeIcon icon={faTwitter} />
                 </button>
                 <button
-                  className="bg-white text-cyan-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-cyan-600 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-facebook-square"></i> */}
                   <FontAwesomeIcon icon={faFacebook} />
                 </button>
                 <button
-                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-dribbble"></i> */}
                   <FontAwesomeIcon icon={faDribbble} />
                 </button>
                 <button
-                  className="bg-white text-blue-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-blue-800 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-github"></i> */}
@@ -157,7 +157,7 @@ export default function Footer() {
                 Copyright © {new Date().getFullYear()} Blog by{" "}
                 <a
                   href="#"
-                  className="text-gray-500/70 hover:text-blueGray-800"
+                  className="text-gray-500/70 hover:text-blue-500/90"
                 >
                   Creative Tim
                 </a>

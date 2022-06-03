@@ -53,14 +53,14 @@ export default function Profile() {
                       <img
                         alt="..."
                         src="/images/picture.jfif"
-                        className="shadow-xl rounded-full h-52 align-middle border-none -top-24 relative w-52  "
+                        className="shadow-xl rounded-full h-52 hover:scale-125 align-middle border-none -top-24 relative w-52  "
                       />
                     </div>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                     <div className="py-6 px-3 mt-32 sm:mt-0">
                       <button
-                        className="bg-gray-700/100 active:bg-blueGray-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                        className="bg-gray-700/100 active:bg-blueGray-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150 hover:bg-blue-600"
                         type="button"
                       >
                         Connect

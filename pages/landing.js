@@ -281,19 +281,19 @@ export default function Home() {
                     </p>
                     <div className="mt-6">
                       <button
-                        className="bg-cyan-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-400 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
-                        className="bg-cyan-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-600 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faFacebook} />
                       </button>
                       <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-pink-500 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faDribbble} />
@@ -316,13 +316,13 @@ export default function Home() {
                     </p>
                     <div className="mt-6">
                       <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-red-600 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
-                        className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-300 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faFacebook} />
@@ -345,19 +345,19 @@ export default function Home() {
                     </p>
                     <div className="mt-6">
                       <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-red-600 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
-                        className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-300 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
-                        className="bg-cyan-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-700 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faInstagram} />
@@ -380,25 +380,25 @@ export default function Home() {
                     </p>
                     <div className="mt-6">
                       <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-pink-500 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faDribbble} />
                       </button>
                       <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-red-600 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
-                        className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-300 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
-                        className="bg-cyan-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-cyan-700 text-white w-8 h-8 hover:scale-125 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                       <FontAwesomeIcon icon={faInstagram} />

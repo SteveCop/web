@@ -12,7 +12,7 @@ COPY . .
 COPY --from=deps /app/node_modules ./node_modules
 
 
-RUN cp .env.production .env.production
+RUN cp .env.master .env.production
 
 RUN yarn build
 

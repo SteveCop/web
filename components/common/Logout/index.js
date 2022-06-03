@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Image from 'next/image'
 import Router from 'next/router'
 import { removeToken } from '../../../lib/token'
 import { useRouter } from "next/router";

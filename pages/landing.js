@@ -1,7 +1,15 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/Navbar'
 import Footer from "../components/Footers/Footer.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserFriends, faRocket, faAward, faRetweet, faFingerprint, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebook,
+  faTwitter,
+  faDribbble,
+  faGoogle,
+  faInstagram,
+  faHtml5
+} from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link';
 
 
@@ -11,7 +19,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
       <div className="relative pt-16 pb-32 flex content-center items-center justify-center">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
@@ -19,6 +26,7 @@ export default function Home() {
               backgroundImage:
                 "url('https://www.japan-guide.com/thumb/interest_flowers.jpg')",
             }}
+            
           >
           <span
             id="blackOverlay"
@@ -64,10 +72,10 @@ export default function Home() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                      <FontAwesomeIcon icon={faAward} />
                     </div>
                     <h6 className="text-xl font-semibold">Cactus</h6>
-                      <p className="mt-2 mb-4 text-blue-500/70">
+                      <p className="mt-2 mb-4 text-gray-500/70">
                         Plants that grow in the desert
                       </p>
                   </div>
@@ -78,10 +86,10 @@ export default function Home() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                      <i className="fas fa-retweet"></i>
+                      <FontAwesomeIcon icon={faRetweet} />
                     </div>
                     <h6 className="text-xl font-semibold">Sun Flower</h6>
-                    <p className="mt-2 mb-4 text-blue-500/70">
+                    <p className="mt-2 mb-4 text-gray-500/70">
                       Plants that give 
                     </p>
                   </div>
@@ -92,10 +100,10 @@ export default function Home() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                      <FontAwesomeIcon icon={faFingerprint} />
                     </div>
                     <h6 className="text-xl font-semibold">Lili</h6>
-                    <p className="mt-2 mb-4 text-blue-500/70">
+                    <p className="mt-2 mb-4 text-gray-500/70">
                       Lili is a part of genus Lilium
                     </p>
                   </div>
@@ -105,26 +113,26 @@ export default function Home() {
               <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-blue-500/70 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-user-friends text-xl"></i>
+                <FontAwesomeIcon icon={faUserFriends} />
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Flower is symbol about life
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blue-600/60">
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-600/60">
                   you can get so many meaning about life in flower
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blue-600/60">
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-600/60">
                   explore this blog and you can find what different about flower.
                 </p>
                 <Link href="/">
-                  <a href="#pablo" className="font-bold text-blue-700/30 mt-8">
+                  <a href="#pablo" className="font-bold text-gray-700/30 hover:text-blue-500/90 mt-8">
                     Check the blog
                   </a>
                 </Link>
               </div>
 
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-800/75">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-800/100">
                     <img
                       alt="..."
                       src="https://cdn.shopify.com/s/files/1/1789/5809/products/0620-BloomyDays-Thumbnail-01_1600x.jpg?v=1592275040"
@@ -139,7 +147,7 @@ export default function Home() {
                       >
                         <polygon
                           points="-30,95 583,95 583,65"
-                          className="text-blue-800/75 fill-current"
+                          className="text-blue-800/100 fill-current"
                         ></polygon>
                       </svg>
                       <h4 className="text-xl font-bold text-white">
@@ -183,16 +191,16 @@ export default function Home() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://i.pinImage.com/originals/62/f1/65/62f165cebd814ec81f1e5a324eecbdd1.jpg"
+                  src="https://i.pinimg.com/originals/62/f1/65/62f165cebd814ec81f1e5a324eecbdd1.jpg"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
                   <div className="text-blue-500/70 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-200/20">
-                    <i className="fas fa-rocket text-xl"></i>
+                    <FontAwesomeIcon icon={faRocket} />
                   </div>
                   <h3 className="text-3xl font-semibold">A growing company</h3>
-                  <p className="mt-4 text-lg leading-relaxed text-blue-500/70">
+                  <p className="mt-4 text-lg leading-relaxed text-gray-500/70">
                     The extension comes with three pre-built pages to help you
                     get started faster. You can change the text and images and
                     you&apos;re good to go.
@@ -201,12 +209,12 @@ export default function Home() {
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-500/70 bg-blue-100/100 mr-3">
-                            <i className="fas fa-fingerprint"></i>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-500/70 bg-blue-100/100 mr-3">
+                            <FontAwesomeIcon icon={faFingerprint} />
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blue-500/70">
+                          <h4 className="text-gray-500/70">
                             Carefully crafted components
                           </h4>
                         </div>
@@ -215,12 +223,12 @@ export default function Home() {
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-500/70 bg-blue-100/100 mr-3">
-                            <i className="fab fa-html5"></i>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-500/70 bg-blue-100/100 mr-3">
+                            <FontAwesomeIcon icon={faHtml5} />
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blue-500/70">
+                          <h4 className="text-gray-500/70">
                             Amazing page examples
                           </h4>
                         </div>
@@ -229,12 +237,12 @@ export default function Home() {
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-500/70 bg-blue-100/100 mr-3">
-                            <i className="far fa-paper-plane"></i>
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-500/70 bg-blue-100/100 mr-3">
+                            <FontAwesomeIcon icon={faPaperPlane} />
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blue-500/70">
+                          <h4 className="text-gray-500/70">
                             Dynamic components
                           </h4>
                         </div>
@@ -253,7 +261,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">Here are our photographer</h2>
-                <p className="text-lg leading-relaxed m-4 text-blue-500/70">
+                <p className="text-lg leading-relaxed m-4 text-gray-500/70">
                   people who go to other country to get the nice pict of flower.
                 </p>
               </div>
@@ -268,7 +276,7 @@ export default function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Ryan Tompson</h5>
-                    <p className="mt-1 text-sm text-blue-400/50 uppercase font-semibold">
+                    <p className="mt-1 text-sm text-gray-400/50 uppercase font-semibold">
                       Photograper
                     </p>
                     <div className="mt-6">
@@ -276,19 +284,19 @@ export default function Home() {
                         className="bg-cyan-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
                         className="bg-cyan-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
+                      <FontAwesomeIcon icon={faFacebook} />
                       </button>
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-dribbble"></i>
+                      <FontAwesomeIcon icon={faDribbble} />
                       </button>
                     </div>
                   </div>
@@ -303,7 +311,7 @@ export default function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-blue-400/50 uppercase font-semibold">
+                    <p className="mt-1 text-sm text-gray-400/50 uppercase font-semibold">
                       Photograper Specialist
                     </p>
                     <div className="mt-6">
@@ -311,13 +319,13 @@ export default function Home() {
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                      <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
                         className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
+                      <FontAwesomeIcon icon={faFacebook} />
                       </button>
                     </div>
                   </div>
@@ -332,7 +340,7 @@ export default function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-blue-400/50 uppercase font-semibold">
+                    <p className="mt-1 text-sm text-gray-400/50 uppercase font-semibold">
                       Photograper & Designer
                     </p>
                     <div className="mt-6">
@@ -340,19 +348,19 @@ export default function Home() {
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                      <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
                         className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                      <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
                         className="bg-cyan-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-instagram"></i>
+                      <FontAwesomeIcon icon={faInstagram} />
                       </button>
                     </div>
                   </div>
@@ -367,7 +375,7 @@ export default function Home() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-blue-400/50 uppercase font-semibold">
+                    <p className="mt-1 text-sm text-gray-400/50 uppercase font-semibold">
                       Photograper & Art
                     </p>
                     <div className="mt-6">
@@ -375,25 +383,25 @@ export default function Home() {
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-dribbble"></i>
+                      <FontAwesomeIcon icon={faDribbble} />
                       </button>
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                      <FontAwesomeIcon icon={faGoogle} />
                       </button>
                       <button
                         className="bg-cyan-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                      <FontAwesomeIcon icon={faTwitter} />
                       </button>
                       <button
                         className="bg-cyan-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-instagram"></i>
+                      <FontAwesomeIcon icon={faInstagram} />
                       </button>
                     </div>
                   </div>
@@ -403,7 +411,6 @@ export default function Home() {
           </div>
         </section>
 
-      </main>
       
       <Footer />
     </>

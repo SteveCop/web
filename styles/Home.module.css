@@ -13,13 +13,18 @@
 }
 
 .main2 {
-  min-height: 83vh;
+  min-height: 60.5vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main3 {
+  min-height: 83vh;
+  padding: 4rem 0;
 }
 
 .footer {

@@ -126,7 +126,7 @@ export default function Home() {
 
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                   <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-800/75">
-                    <img
+                    <Image
                       alt="..."
                       src="https://cdn.shopify.com/s/files/1/1789/5809/products/0620-BloomyDays-Thumbnail-01_1600x.jpg?v=1592275040"
                       className="w-full align-middle rounded-t-lg"
@@ -181,10 +181,10 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-                <img
+                <Image
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://i.pinimg.com/originals/62/f1/65/62f165cebd814ec81f1e5a324eecbdd1.jpg"
+                  src="https://i.pinImage.com/originals/62/f1/65/62f165cebd814ec81f1e5a324eecbdd1.jpg"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -196,7 +196,7 @@ export default function Home() {
                   <p className="mt-4 text-lg leading-relaxed text-blue-500/70">
                     The extension comes with three pre-built pages to help you
                     get started faster. You can change the text and images and
-                    you're good to go.
+                    you&apos;re good to go.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -262,7 +262,7 @@ export default function Home() {
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
+                  <Image
                     alt="..."
                     src="/images/team-1-800x800.jpg"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
@@ -297,7 +297,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
+                  <Image
                     alt="..."
                     src="/images/team-2-800x800.jpg"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
@@ -326,7 +326,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
+                  <Image
                     alt="..."
                     src="/images/team-3-800x800.jpg"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
@@ -361,7 +361,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
+                  <Image
                     alt="..."
                     src="/images/team-4-470x470.png"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"

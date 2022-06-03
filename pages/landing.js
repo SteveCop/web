@@ -180,7 +180,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-                <Image
+                <image
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src="https://i.pinImage.com/originals/62/f1/65/62f165cebd814ec81f1e5a324eecbdd1.jpg"

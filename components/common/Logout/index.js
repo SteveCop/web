@@ -32,8 +32,8 @@ export default function Logout () {
             <img className="inline object-cover w-10 h-9 rounded-full" src="/images/picture.jfif" alt="Profile image"/>
                 <div className={` ${hidden === 'hidden' ? 'hidden' : 'visible' } absolute z-50 shadow-2xl text-base bg-white rounded divide-gray-100  right-8 top-16 mt-2 w-56 divide-y`}>
                     <div className="px-4 py-3 text-black" onClick={redirectToProfile}>
-                        <span className="block text-sm">Test</span>
-                        <span className="block text-sm font-medium truncate">test@google.com</span>
+                        <span className="block text-sm">Stevanie</span>
+                        <span className="block text-sm font-medium truncate">stevanie@google.com</span>
                     </div> 
                     <ul className="py-1" aria-labelledby="dropdown">
                     <li>

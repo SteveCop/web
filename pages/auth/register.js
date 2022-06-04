@@ -7,7 +7,7 @@ import Footer from "../../components/Footers/Footer.js"
 export default function Register() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.main2}>
        
       <RegisterForm />
@@ -16,7 +16,7 @@ export default function Register() {
         </div>
       </main>
       
-      <Footer />
+      {/* <Footer /> */}
       </>
   );
 }

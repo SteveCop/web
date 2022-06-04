@@ -36,34 +36,48 @@ export default function Footer() {
               <h5 className="text-lg mt-0 mb-2 text-gray-500/70">
                 Find us on any of these platforms, we respond 1-2 business days.
               </h5>
-              <div className="mt-6 lg:mb-0 mb-6">
+              <div className="mt-6 lg:mb-0 mb-6 flex">
                 <button
-                  className="bg-white text-cyan-400 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-cyan-400 shadow-lg flex font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <FontAwesomeIcon icon="fab fa-twitter" /> */}
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faTwitter} style={{
+                    height: '15px', width: '15px' 
+                  }}/>
                 </button>
                 <button
-                  className="bg-white text-cyan-600 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white flex text-cyan-600 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-facebook-square"></i> */}
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faFacebook} 
+                   style={{
+                    height: '15px', width: '15px' 
+                  }}
+                  />
                 </button>
                 <button
-                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white flex text-pink-400 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-dribbble"></i> */}
-                  <FontAwesomeIcon icon={faDribbble} />
+                  <FontAwesomeIcon icon={faDribbble} 
+                   style={{
+                    height: '15px', width: '15px' 
+                  }}
+                  />
                 </button>
                 <button
-                  className="bg-white text-blue-800 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white flex text-blue-800 shadow-lg font-normal h-10 w-10 items-center hover:bg-cyan-600 justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   {/* <i className="fab fa-github"></i> */}
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} 
+                   style={{
+                    height: '15px', width: '15px' 
+                  }}
+                  />
                 </button>
               </div>
             </div>

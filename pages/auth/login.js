@@ -8,7 +8,7 @@ import Footer from "../../components/Footers/Footer.js";
 export default function Login() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.main2}>
       <LoginForm />
         <div className="text-sm font-medium">
@@ -16,7 +16,7 @@ export default function Login() {
         </div>
       </main>
       
-      <Footer />
+      {/* <Footer /> */}
     </>
 
   );

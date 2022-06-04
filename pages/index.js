@@ -13,7 +13,7 @@ export default function Home() {
         <title>Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.main} >
         <a href="#" className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 px-2">
             <img className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/images/ptech_home.jpg" alt=""/>
@@ -49,7 +49,7 @@ export default function Home() {
         
       </main>
       
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

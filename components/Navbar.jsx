@@ -1,14 +1,16 @@
+import e from 'cors';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Logout from './common/Logout';
 
 export const Navbar = () => {
   const [cookie, setCookie] = useState()
-
+  const [open, setOpen] = useState('hidden')
+  
   useEffect(() => {
     const token = window?.localStorage.getItem("token") || window.sessionStorage.getItem("token");
     setCookie(token)
-  }, [])
+  })
 
   const lists = [
     {menu: 'Home', link: '/'},
@@ -18,6 +20,15 @@ export const Navbar = () => {
     {menu: 'Landing', link: '/landing'},
     {menu: cookie ? <Logout /> : 'Login', link: cookie ? '' : '/auth/login'},
   ]
+
+  function handleOpen() {
+    if(open === 'hidden') {
+      setOpen('visible')
+    } else {
+      setOpen('hidden')
+    }
+  }
+
 
   return (
     < >
@@ -29,7 +40,9 @@ export const Navbar = () => {
             </span>
           </a>
         </Link>
-        <button className=' inline-flex p-3 hover:bg-cyan-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'>
+        <button
+          onClick={() => handleOpen()}
+          className=' inline-flex p-3 hover:bg-cyan-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'>
           <svg
             className='w-6 h-6'
             fill='none'
@@ -45,7 +58,7 @@ export const Navbar = () => {
             />
           </svg>
         </button>
-        <div className='hidden w-full lg:inline-flex lg:flex-grow lg:w-auto'>
+        <div className={` w-full lg:inline-flex lg:flex-grow lg:w-auto ${open}`}>
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             {lists.map((list, index) => (
             <Link href={list?.link} key={index}>

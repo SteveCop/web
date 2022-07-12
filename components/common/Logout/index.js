@@ -26,6 +26,7 @@ export default function Logout () {
         removeToken();
         Router.push("/auth/login");
         }
+    
 
     return (
         <div className={'flex items-center w-10 h-8 '} onClick={() => handleHidden()} >

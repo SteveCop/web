@@ -1,5 +1,4 @@
-import { Navbar } from '../components/Navbar'
-import Footer from "../components/Footers/Footer.js";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkedAlt, faBriefcase, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,7 +7,6 @@ export default function Profile() {
 
   return (
     <>
-      {/* <Navbar /> */}
 
       <main className="profile-page">
         <section className="relative block h-[500px]">
@@ -102,21 +100,21 @@ export default function Profile() {
                     Stevanie
                   </h3>
                   <div className="text-sm leading-normal mt-0 mb-2 text-gray-400 font-bold uppercase">
-                    <FontAwesomeIcon icon={faMapMarkedAlt} className="mr-2 text-lg text-gray-400/40"
+                    <FontAwesomeIcon icon={faMapMarkedAlt} className="text-lg text-gray-400/40"
                       style={{
                         height: '15px', width: '15px'
                       }} /> {" "}
                     Los Angeles, California
                   </div>
                   <div className="mb-2 text-gray-600 mt-10">
-                    <FontAwesomeIcon icon={faBriefcase} className="mr-2 text-lg text-gray-400/40"
+                    <FontAwesomeIcon icon={faBriefcase} className="text-lg text-gray-400/40"
                       style={{
                         height: '15px', width: '15px'
                       }} />
                     Solution Manager - Creative Tim Officer
                   </div>
                   <div className="mb-2 text-gray-600">
-                    <FontAwesomeIcon icon={faUniversity} className="mr-2 text-lg text-gray-400/40"
+                    <FontAwesomeIcon icon={faUniversity} className="text-lg text-gray-400/40"
                       style={{
                         height: '15px', width: '15px'
                       }} />
@@ -148,7 +146,6 @@ export default function Profile() {
           </div>
         </section>
       </main>
-      {/* <Footer /> */}
     </>
   )
 }

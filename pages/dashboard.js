@@ -1,131 +1,143 @@
 import { motion } from "framer-motion";
-
+import { Navbar } from "../components/AdminNavbar"
+import Link from 'next/link';
+import { useEffect, useState } from 'react'
 import Router from 'next/router'
 
 /* framer motion  config 
 https://codesandbox.io/s/uotor?module=/src/Example.tsx&file=/src/Example.tsx:73-349
 */
+
+
 function redirectToHome() {
   Router.push("/");
-  }  
+}
+
+function redirectToProfile() {
+  Router.push("/profile");
+}
+
+
 
 const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2
     }
-  };
-  
-  const variantItem = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  };
+  }
+};
+
+const variantItem = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
 
 
 const menuItems = [
-    {
-        name: 'Folders',
-        svg: (<svg
-        aria-hidden="true"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="h-6 w-6"
-        >
-        <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-        />
-        </svg>)
-    },
-    {
-        name: 'Messages',
-        svg: (<svg
-        aria-hidden="true"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="h-6 w-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        />
-      </svg>)
-    },
-    {
-        name: 'Documents',
-        svg: (<svg
-        aria-hidden="true"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="h-6 w-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-        />
-      </svg>)
-    }
+  {
+    name: 'Folders',
+    svg: (<svg
+      aria-hidden="true"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+      />
+    </svg>)
+  },
+  {
+    name: 'Messages',
+    svg: (<svg
+      aria-hidden="true"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    </svg>)
+  },
+  {
+    name: 'Documents',
+    svg: (<svg
+      aria-hidden="true"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      />
+    </svg>)
+  }
 ]
 
 const MenuItem = (item, active) => (
-<motion.a
+  <motion.a
     variants={variantItem}
     key={item.name}
     href="#"
-    className="inline-flex items-center justify-center py-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg"
->
+    className="inline-flex items-center justify-center py-3 hover:text-blue-400 hover:bg-blue-500 focus:text-gray-400 focus:bg-blue-700 rounded-lg"
+  >
     <span className="sr-only">{item.name}</span>
     {item.svg}
-</motion.a>
+  </motion.a>
 )
 
 const Aside = () => (
   <motion.aside
-  transition={{ duration: 0.2 }}
-  initial={{ x: -88}}
-        animate={{ x: 0 }} 
-        
-  className="hidden sm:flex sm:flex-col">
+    transition={{ duration: 0.2 }}
+    initial={{ x: -88 }}
+    animate={{ x: 0 }}
+
+    className="hidden sm:flex sm:flex-col">
     <a
       href="#"
-      className="inline-flex items-center justify-center h-20 w-20 bg-purple-600 hover:bg-purple-500 focus:bg-purple-500"
+      className="inline-flex items-center justify-center h-20 w-20 bg-white "
     >
-      <svg fill="none" viewBox="0 0 64 64" className="h-12 w-12">
+      < img
+        alt="..."
+        src="/images/icon/apple-touch-icon.png"
+        className="shadow-xl rounded-full h-8 align-middle border-none absolute "
+      />
+      {/* <svg fill="none" viewBox="0 0 64 64" className="h-12 w-12">
         <title>Company logo</title>
-        <path
-          d="M32 14.2c-8 0-12.9 4-14.9 11.9 3-4 6.4-5.6 10.4-4.5 2.3.6 4 2.3 5.7 4 2.9 3 6.3 6.4 13.7 6.4 7.9 0 12.9-4 14.8-11.9-3 4-6.4 5.5-10.3 4.4-2.3-.5-4-2.2-5.7-4-3-3-6.3-6.3-13.7-6.3zM17.1 32C9.2 32 4.2 36 2.3 43.9c3-4 6.4-5.5 10.3-4.4 2.3.5 4 2.2 5.7 4 3 3 6.3 6.3 13.7 6.3 8 0 12.9-4 14.9-11.9-3 4-6.4 5.6-10.4 4.5-2.3-.6-4-2.3-5.7-4-2.9-3-6.3-6.4-13.7-6.4z"
-          fill="#fff"
-        />
-      </svg>
+
+      </svg> */}
     </a>
-    <div className="flex-grow flex flex-col justify-between text-gray-500 bg-gray-800">
-      <motion.nav 
-      initial="hidden"
-      animate="visible"
+    <div className="flex-grow flex flex-col justify-between text-gray-500 bg-white">
+      <motion.nav
+        initial="hidden"
+        animate="visible"
         variants={container}
-      className="flex flex-col mx-4 my-6 space-y-4">
-          
-        
+        className="flex flex-col mx-4 my-6 space-y-4">
+
+
         <a
           href="#"
-          className="inline-flex items-center justify-center py-3 text-purple-600 bg-white rounded-lg"
+          className="inline-flex items-center justify-center py-3 text-blue-600 bg-white rounded-lg"
         >
           <span className="sr-only">Dashboard</span>
           <svg
@@ -145,10 +157,10 @@ const Aside = () => (
         </a>
 
         {menuItems.map(item => MenuItem(item))}
-       
+
       </motion.nav>
       <div className="inline-flex items-center justify-center h-20 w-20 border-t border-gray-700">
-        <button className="p-3 hover:text-gray-400 hover:bg-gray-700 focus:text-gray-400 focus:bg-gray-700 rounded-lg">
+        <button className="p-3 hover:text-gray-400 hover:bg-blue-500 focus:text-gray-400 focus:bg-blue-700 rounded-lg">
           <span className="sr-only">Settings</span>
           <svg
             aria-hidden="true"
@@ -176,128 +188,146 @@ const Aside = () => (
   </motion.aside>
 );
 
-const Header = () => (
-  <header className="flex items-center h-20 px-6 sm:px-10 bg-white">
-    <button className="block sm:hidden relative flex-shrink-0 p-2 mr-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800 focus:bg-gray-100 focus:text-gray-800 rounded-full">
-      <span className="sr-only">Menu</span>
-      <svg
-        aria-hidden="true"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="h-6 w-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M4 6h16M4 12h16M4 18h7"
-        />
-      </svg>
-    </button>
-    <div className="relative w-full max-w-md sm:-ml-2 flex items-center">
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="absolute h-6 w-6 mt-2.5 ml-2 text-gray-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <input
-        type="text"
-        role="search"
-        placeholder="Search..."
-        className="py-2 pl-10 pr-4 w-full border-4 border-transparent placeholder-gray-400 focus:bg-gray-50 rounded-lg"
-      />
-    </div>
-    <div className="flex flex-shrink-0 items-center ml-auto">
-      <button className="inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg">
-        <span className="sr-only">User Menu</span>
-        <div className="hidden md:flex md:flex-col md:items-end md:leading-tight">
-          <span className="font-semibold">Test</span>
-          <span className="text-sm text-gray-600">Admin</span>
-        </div>
-        <span className="h-12 w-12 ml-2 sm:ml-3 mr-2 bg-gray-100 rounded-full overflow-hidden">
-          <img
-            src="/images/picture.jfif"
-            alt="user profile photo"
-            className="h-full w-full object-cover"
-          />
-        </span>
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="hidden sm:block h-6 w-6 text-gray-300"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div className="border-l pl-3 ml-3 space-x-1">
-        <button className="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full">
-          <span className="sr-only">Notifications</span>
-          <span className="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full"></span>
-          <span className="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full animate-ping"></span>
-          <svg
-            aria-hidden="true"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-            />
-          </svg>
-        </button>
-        <button className="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full" onClick={redirectToHome}>
-          <span className="sr-only">Log out</span>
-          <svg
-            aria-hidden="true"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-);
+
+// const Header = () => (
+
+
+
+//   <header className="flex items-center h-20 px-6 sm:px-10 bg-white">
+//     <button className="block sm:hidden relative flex-shrink-0 p-2 mr-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800 focus:bg-gray-100 focus:text-gray-800 rounded-full">
+//       <span className="sr-only">Menu</span>
+//       <svg
+//         aria-hidden="true"
+//         fill="none"
+//         viewBox="0 0 24 24"
+//         stroke="currentColor"
+//         className="h-6 w-6"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           strokeWidth="2"
+//           d="M4 6h16M4 12h16M4 18h7"
+//         />
+//       </svg>
+//     </button>
+//     <div className="relative w-full max-w-md sm:-ml-2 flex items-center">
+//       <svg
+//         aria-hidden="true"
+//         viewBox="0 0 20 20"
+//         fill="currentColor"
+//         className="absolute h-6 w-6 mt-2.5 ml-2 text-gray-400"
+//       >
+//         <path
+//           fillRule="evenodd"
+//           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+//           clipRule="evenodd"
+//         />
+//       </svg>
+//       <input
+//         type="text"
+//         role="search"
+//         placeholder="Search..."
+//         className="py-2 pl-10 pr-4 w-full border-4 border-transparent placeholder-gray-400 focus:bg-gray-50 rounded-lg"
+//       />
+//     </div>
+//     <div className="flex flex-shrink-0 items-center ml-auto">
+//       <button className="inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg" >
+//         <span className="sr-only">User Menu</span>
+//         <div className="hidden md:flex md:flex-col md:items-end md:leading-tight">
+//           <span className="font-semibold">Test</span>
+//           <span className="text-sm text-gray-600">Admin</span>
+//         </div>
+//         <span className="h-12 w-12 ml-2 sm:ml-3 mr-2 bg-gray-100 rounded-full overflow-hidden">
+//           <img
+//             src="/images/picture.jfif"
+//             alt="user profile photo"
+//             className="h-full w-full object-cover"
+//           />
+//         </span>
+//         <svg
+//           aria-hidden="true"
+//           viewBox="0 0 20 20"
+//           fill="currentColor"
+//           className="hidden sm:block h-6 w-6 text-gray-300"
+//         >
+//           <path
+//             fillRule="evenodd"
+//             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+//             clipRule="evenodd"
+//           />
+//         </svg>
+//       </button>
+//       {/* <div className={`absolute z-50 shadow-2xl text-base bg-white rounded divide-gray-100  right-8 top-16 mt-2 w-56 divide-y  `}>
+//         <ul className="py-1" aria-labelledby="dropdown">
+//           <li>
+//             <a className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" onClick={redirectToProfile} >Profile</a>
+//           </li>
+//           <li>
+//             <a href="#" className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Setting</a>
+//           </li>
+//           <li>
+//             <a href="#" className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Help</a>
+//           </li>
+//         </ul>
+//       </div> */}
+//       <div className="border-l pl-3 ml-3 space-x-1">
+//         <button className="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full">
+//           <span className="sr-only">Notifications</span>
+//           <span className="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full"></span>
+//           <span className="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full animate-ping"></span>
+//           <svg
+//             aria-hidden="true"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             stroke="currentColor"
+//             className="h-6 w-6"
+//           >
+//             <path
+//               strokeLinecap="round"
+//               strokeLinejoin="round"
+//               strokeWidth="2"
+//               d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+//             />
+//           </svg>
+//         </button>
+//         <button className="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full" onClick={redirectToHome}>
+//           <span className="sr-only">Log out</span>
+//           <svg
+//             aria-hidden="true"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             stroke="currentColor"
+//             className="h-6 w-6"
+//           >
+//             <path
+//               strokeLinecap="round"
+//               strokeLinejoin="round"
+//               strokeWidth="2"
+//               d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+//             />
+//           </svg>
+//         </button>
+//       </div>
+//     </div>
+//   </header>
+
+// );
 
 const Main = () => (
-  <motion.main 
-  
-  transition={{ duration: 0.3, delay: 0}}
-        animate={{ y: 0, opacity: 1 }}
-        initial={{ y: 15, opacity: 0 }}
-  className="p-6 sm:p-10 space-y-6">
+  <motion.main
+
+    transition={{ duration: 0.3, delay: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    initial={{ y: 15, opacity: 0 }}
+    className="p-6 sm:p-10 space-y-6">
     <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between">
       <div className="mr-6">
         <h1 className="text-4xl font-semibold mb-2">Dashboard</h1>
         <h2 className="text-gray-600 ml-0.5">Mobile UX/UI Design course</h2>
       </div>
       <div className="flex flex-wrap items-start justify-end -mb-3">
-        <button className="inline-flex px-5 py-3 text-purple-600 hover:text-purple-700 focus:text-purple-700 hover:bg-purple-100 focus:bg-purple-100 border border-purple-600 rounded-md mb-3">
+        <button className="inline-flex px-5 py-3 text-blue-600 hover:text-blue-700 focus:text-blue-700 hover:bg-blue-100 focus:bg-blue-100 border border-blue-600 rounded-md mb-3">
           <svg
             aria-hidden="true"
             fill="none"
@@ -314,7 +344,7 @@ const Main = () => (
           </svg>
           Manage dashboard
         </button>
-        <button className="inline-flex px-5 py-3 text-white bg-purple-600 hover:bg-purple-700 focus:bg-purple-700 rounded-md ml-6 mb-3">
+        <button className="inline-flex px-5 py-3 text-white bg-blue-600 hover:bg-blue-700 focus:bg-blue-700 rounded-md ml-6 mb-3">
           <svg
             aria-hidden="true"
             fill="none"
@@ -610,20 +640,27 @@ const Main = () => (
       </div>
     </section>
 
-   
+
   </motion.main>
 );
 
+
 function Layout() {
+
   return (
+    <>
     <div className="flex bg-gray-100 min-h-screen">
-      <Aside></Aside>
+      <Aside> </Aside>
+      
 
       <div className="flex-grow text-gray-800">
-        <Header></Header>
+        {/* <Header></Header> */}
+        
+    <Navbar/>
         <Main></Main>
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Javanese
+- Font Author: Copyright 2018 Google Inc. All Rights Reserved.
+- Font Source: http://fonts.gstatic.com/s/notosansjavanese/v15/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAHJ8r88Rp29eA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

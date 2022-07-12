@@ -72,9 +72,9 @@ export default function Home() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                     <FontAwesomeIcon icon={faAward} />
                   </div>
-                  <h6 className="text-xl font-semibold">Cactus</h6>
+                  <h6 className="text-xl font-semibold">Protograph</h6>
                   <p className="mt-2 mb-4 text-gray-500/70">
-                    Plants that grow in the desert
+                    Photo your journey
                   </p>
                 </div>
               </div>
@@ -86,9 +86,9 @@ export default function Home() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                     <FontAwesomeIcon icon={faRetweet} />
                   </div>
-                  <h6 className="text-xl font-semibold">Sun Flower</h6>
+                  <h6 className="text-xl font-semibold">Sketch</h6>
                   <p className="mt-2 mb-4 text-gray-500/70">
-                    Plants that give
+                    Sketch view
                   </p>
                 </div>
               </div>
@@ -100,9 +100,9 @@ export default function Home() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                     <FontAwesomeIcon icon={faFingerprint} />
                   </div>
-                  <h6 className="text-xl font-semibold">Lili</h6>
+                  <h6 className="text-xl font-semibold">Journey</h6>
                   <p className="mt-2 mb-4 text-gray-500/70">
-                    Lili is a part of genus Lilium
+                    Travel place 
                   </p>
                 </div>
               </div>
